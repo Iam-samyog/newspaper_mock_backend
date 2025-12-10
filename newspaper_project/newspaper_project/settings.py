@@ -55,7 +55,7 @@ ROOT_URLCONF = 'newspaper_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,3 +120,7 @@ STATIC_URL = 'static/'
 
 #Custome User Model
 AUTH_USER_MODEL = 'users.CustomUser'
+
+#Redirect_urls
+LOGIN_REDIRECT_URL='home'
+LOGOUT_REDIRECT_URL='home'
